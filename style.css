@@ -11,9 +11,9 @@
 
 //.chart::-webkit-scrollbar {height:1px; width:1px;}
 
-.chart-row {  
-    display: grid; 
-    grid-template-columns: repeat(11, 600px);
+.chart-row {
+    display: grid;
+    grid-template-columns: 150px repeat(12, 600px);
  }
 
 .chart-period > span {
@@ -25,7 +25,7 @@
 }
 
 .chart-lines {
-	grid-template-columns: repeat(11, 600px); 
+	grid-template-columns:150px repeat(12, 600px); 
 	position: absolute; 
 	height: 100%;  
 	width: 100%;  
@@ -40,7 +40,7 @@
 .chart-row-bars {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(66, 100px);
+    grid-template-columns:100px repeat(72, 100px);
     padding: 5px 0;
     margin: 0;
 }
@@ -59,12 +59,12 @@
 .rounded-xl {border-radius: calc(.75rem - 1px)!important;}
 .noHover{pointer-events:none;}
 
-.chart-row.bg-primary {box-shadow: inset 15px 0px 0px 0px #007bff; background:rgb(0 123 255 / 45%)!important;}
-.chart-row.bg-secondary{box-shadow: inset  15px 0px 0px 0px #6c757d; background:rgb(108 117 125 / 45%)!important; }
-.chart-row.bg-success{box-shadow: inset 15px 0px 0px 0px #28a74500; background:rgb(40 167 69 / 45%)!important;}
-.chart-row.bg-danger{box-shadow: inset  15px 0px 0px 0px #dc354573; background:rgb(220 53 69 / 45%)!important;}
-.chart-row.bg-warning{box-shadow: inset 15px 0px 0px 0px #ffc107; background:rgb(255 193 7 / 45%)!important;}
-.chart-row.bg-info{ box-shadow: inset 15px 0px 0px 0px #17a2b8; background:rgb(23 162 184 / 45%)!important;}
+.chart-row.bg-primary {box-shadow: inset 15px 0px 0px 0px #007bff73; background:#007bff73!important;}
+.chart-row.bg-secondary {box-shadow: inset  15px 0px 0px 0px #6c757d73; background:#6c757d73!important; }
+.chart-row.bg-success {box-shadow: inset 15px 0px 0px 0px #28a74573; background:#28a74573!important;}
+.chart-row.bg-danger {box-shadow: inset  15px 0px 0px 0px #dc354573; background:#dc354573!important;}
+.chart-row.bg-warning {box-shadow: inset 15px 0px 0px 0px #ffc10773; background:#ffc10773!important;}
+.chart-row.bg-info {box-shadow: inset 15px 0px 0px 0px #17a2b873; background:#17a2b873!important;}
  
 
 

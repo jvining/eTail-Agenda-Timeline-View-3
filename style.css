@@ -1,14 +1,58 @@
+/* eTail relivant branding */
+:root {
+ --pallette: #001440 #829CFA #082EED - Accent #05EB91;
+ --font-weights:Extra Light:200 / Light:300 / Regular:400 / Bold:700 / Black:900;
+ --event-font-primary: 'tenso', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;
+ --event-font-secondary: 'aglet-slab', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'!important;
+ --event-color-primary: #001440!important;
+ --event-color-secondary: #05EB91!important;
+ --event-header-color: #001440!important;
+}
+body p, body ul, body ol, body li, body table, body address, body blockquote, body cite, body label, body input {color:#5f5f5f; font-size:16px; line-height:1.75em; font-weight:400; font-family: var(--event-font-primary);}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {font-weight:400; color: var(--event-header-color); font-family: var(--event-font-secondary);}
+.font-primary, .tk-tenso {font-family: var(--event-font-primary)!important;}
+.font-secondary, .tk-aglet-slab {font-family: var(--event-font-secondary)!important;}
+
+.rounded-xl {border-radius: calc(.75rem - 1px)!important;}
+ 
+/*---------------------------------------------------------------*/ 
+  
+/* Chart Styling > Hover Arrow */
+.card [class*="col-md"] i {opacity:.0; transition: all 0.3s ease!important;}
+.card:hover [class*="col-md"] i {opacity:1; transition: all 0.3s ease!important;}
+
+/* Chart Styling > Session Styles */
+[class*="col-md"] .card-body h6 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp:3; -webkit-box-orient: vertical;}   
+[class*="col-md"] .card-body .bg-light {background:#dddddd!important;}
+[class*="col-md"] .card-body .nav.nav-pills{max-width:250px;}
+
+/* Chart Styling > Track Background Color */
+.chart-row.bg-primary {box-shadow: inset 15px 0px 0px 0px #007bff40; background:#007bff73!important;}
+.chart-row.bg-secondary {box-shadow: inset  15px 0px 0px 0px #6c757d40; background:#6c757d73!important; }
+.chart-row.bg-success {box-shadow: inset 15px 0px 0px 0px #28a74540; background:#28a74573!important;}
+.chart-row.bg-danger {box-shadow: inset  15px 0px 0px 0px #dc354540; background:#dc354573!important;}
+.chart-row.bg-warning {box-shadow: inset 15px 0px 0px 0px #ffc10740; background:#ffc10773!important;}
+.chart-row.bg-info {box-shadow: inset 15px 0px 0px 0px #17a2b840; background:#17a2b873!important;}
+
+.shadow-over:after{	background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1)); border-top-right-radius: calc(.75rem - 1px); border-bottom-right-radius: calc(.75rem - 1px); content:' '; height:100%; position:absolute; right: 15px; top: 0; width: 100px;}
+
+/*---------------------------------------------------------------*/ 
+
+/* Chart Styles & Logic */
 
 .chart { 
     display: grid;
-    border: 2px solid #000;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #829cfa66;
     position: relative;
     overflow: auto;
 	min-width: 100%;
     border-radius: calc(.75rem - 1px);
-	
 }
- 
+
+/* Chart Styling > Removes browsers horizontal Scroll bar */
 .chart::-webkit-scrollbar {height:1px; width:1px;}
 
 .chart-row {
@@ -17,7 +61,9 @@
  }
 
 .chart-period > span {
-	border-bottom:1px #999 solid;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #829cfa66;
     font-size: 13px;  
     align-self: center;  
     font-weight: bold;  
@@ -34,7 +80,7 @@
 
 .chart-lines > span {
 	display: block;  
-	border-right: 1px solid rgba(0, 0, 0, 0.3);
+	border-right: 1px solid #829cfa66;
 }
 
 .chart-row-bars {
@@ -45,23 +91,10 @@
     margin: 0;
 }
 
-.rounded-xl {border-radius: calc(.75rem - 1px)!important;}
-.noHover{pointer-events:none;}
+.chart-row-bars li {
+	overflow:hidden; 
+	position:relative; 
+	cursor:pointer;
+} 
 
-.chart-row-bars li {overflow:hidden; position:relative; cursor:pointer;} 
-
-[class*="col-md"] .card-body h6 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp:3; -webkit-box-orient: vertical;}   
-[class*="col-md"] .card-body .bg-light {background:#dddddd!important;}
-[class*="col-md"] .card-body .nav.nav-pills{max-width:250px;}
-
-.chart-row.bg-primary {box-shadow: inset 15px 0px 0px 0px #007bff40; background:#007bff73!important;}
-.chart-row.bg-secondary {box-shadow: inset  15px 0px 0px 0px #6c757d40; background:#6c757d73!important; }
-.chart-row.bg-success {box-shadow: inset 15px 0px 0px 0px #28a74540; background:#28a74573!important;}
-.chart-row.bg-danger {box-shadow: inset  15px 0px 0px 0px #dc354540; background:#dc354573!important;}
-.chart-row.bg-warning {box-shadow: inset 15px 0px 0px 0px #ffc10740; background:#ffc10773!important;}
-.chart-row.bg-info {box-shadow: inset 15px 0px 0px 0px #17a2b840; background:#17a2b873!important;}
  
-
-
-
-

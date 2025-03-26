@@ -25,7 +25,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {font-weight:400; color: va
 /* Chart Styling > Session Styles */
 [class*="col-md"] .card-body h6 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp:3; -webkit-box-orient: vertical;}   
 [class*="col-md"] .card-body .bg-light {background:#dddddd!important;}
-[class*="col-md"] .card-body .nav.nav-pills{max-width:250px;}
+[class*="col-md"] .card-body .nav.nav-pills{min-width:100px; max-width: 250px;}
 
 /* Chart Styling > Track Background Color */
 .chart-row.bg-primary {box-shadow: inset 15px 0px 0px 0px #007bff40; background:#007bff73!important;}
@@ -36,6 +36,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {font-weight:400; color: va
 .chart-row.bg-info {box-shadow: inset 15px 0px 0px 0px #17a2b840; background:#17a2b873!important;}
 
 .shadow-over:after{	background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1)); border-top-right-radius: calc(.75rem - 1px); border-bottom-right-radius: calc(.75rem - 1px); content:' '; height:100%; position:absolute; right: 15px; top: 0; width: 100px;}
+@media(max-width:500px){.shadow-over:after{width:50px;}}
 
 /*---------------------------------------------------------------*/ 
 

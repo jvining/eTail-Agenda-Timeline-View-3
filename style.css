@@ -22,6 +22,9 @@ body h1, body h2, body h3, body h4, body h5, body h6 {font-weight:400; color: va
 .card [class*="col-md"] i {opacity:.0; transition: all 0.3s ease!important;}
 .card:hover [class*="col-md"] i {opacity:1; transition: all 0.3s ease!important;}
 
+/* Right Scroll Indicator Arrow  */
+i.fa-solid.fa-arrow-right {position: absolute; right:30px; top: 15px; z-index: 2;}
+
 /* Chart Styling > Session Styles */
 [class*="col-md"] .card-body h6 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp:3; -webkit-box-orient: vertical;}   
 [class*="col-md"] .card-body .bg-light {background:#dddddd!important;}
